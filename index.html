@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bliss Bites | Food Made Beautiful</title>
+
+    <meta name="description"
+          content="Discover delicious food at Bliss Bites. Explore our menu of fresh, tasty favourites.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <a href="#" class="logo">bliss<span>.</span>bites</a>
+
+        <nav class="navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#about">Our Story</a>
+            
+<button id="cart-toggle" class="cart-toggle">
+    🛍 My Cart (<span id="cart-count">0</span>)
+</button>
+
+        </nav>
+
+        <a href="#menu" class="header-button">Explore Menu ↗</a>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    GOOD FOOD, BEAUTIFUL MOMENTS
+                </p>
+
+                <h1>
+                    A little bite.<br>
+                    A lot of <em>bliss.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Thoughtfully made favourites, delicious flavours,
+                    and little moments worth slowing down for.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="primary-button">
+                        Explore Our Menu <span>↗</span>
+                    </a>
+
+                    <a href="#about" class="text-button">
+                        Our Story <span>→</span>
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-star">✳</span>
+                    <p>Made with love. Served with joy.</p>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000&auto=format&fit=crop&q=85"
+                    alt="Freshly baked pizza topped with delicious ingredients"
+                >
+
+                <div class="image-label">
+                    <span>OUR KIND OF COMFORT</span>
+                    <strong>Fresh. Tasty. Unforgettable.</strong>
+                </div>
+
+                <div class="image-decoration">B</div>
+            </div>
+
+            <div class="hero-side-note">A GOOD DAY STARTS WITH GOOD FOOD</div>
+
+        </section>
+
+        <!-- Brand Highlights -->
+        <section class="highlights">
+
+            <div class="highlight">
+                <span class="highlight-icon">✳</span>
+                <div>
+                    <h3>Made with care</h3>
+                    <p>Every bite matters</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <span class="highlight-icon">♡</span>
+                <div>
+                    <h3>Flavour first</h3>
+                    <p>Good food, always</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <span class="highlight-icon">✦</span>
+                <div>
+                    <h3>Little moments</h3>
+                    <p>Made more delicious</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Food Menu -->
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A FEW OF OUR FAVOURITES</p>
+                    <h2>Made to make you <em>smile.</em></h2>
+                </div>
+
+                <p class="section-description">
+                    Your comfort food favourites,
+                    ready to brighten your day.
+                </p>
+            </div>
+            
+
+<!-- Search and category filters -->
+<div class="menu-tools">
+
+    <div class="search-box">
+        <span>⌕</span>
+        <input
+            type="search"
+            id="food-search"
+            placeholder="Search your favourites..."
+            aria-label="Search food items">
+    </div>
+
+    <div class="category-filters">
+        <button class="filter-btn active" data-category="all">
+            All Items
+        </button>
+
+        <button class="filter-btn" data-category="meals">
+            Meals
+        </button>
+
+        <button class="filter-btn" data-category="desserts">
+            Desserts
+        </button>
+
+        <button class="filter-btn" data-category="drinks">
+            Drinks
+        </button>
+    </div>
+
+</div>
+
+<p id="no-results" hidden>
+    No matching food found. Try another search.
+</p>
+
+
+
+
+            <div class="food-grid">
+
+                <!-- Pizza -->
+                <article class="food-card" data-category="meals">
+                    <div class="food-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=85"
+                            alt="Fresh cheese pizza"
+                            class="food-image"
+                        >
+                        <span class="food-tag">FAVOURITE</span>
+                    </div>
+
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Classic Pizza</h3>
+                            <span class="food-price">₹199</span>
+                        </div>
+
+                        <p>Golden crust, rich cheese and
+                           delicious toppings.</p>
+
+                        <button class="add-to-cart"
+                                data-name="Classic Pizza"
+                                data-price="199">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+                            
+<!-- Creamy Pasta -->
+<article class="food-card"data-category="meals">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&auto=format&fit=crop&q=85"
+            alt="Creamy pasta"
+            class="food-image">
+        <span class="food-tag">COMFORT FOOD</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>Creamy Pasta</h3>
+            <span class="food-price">₹179</span>
+        </div>
+        <p>Comforting pasta with a rich, delicious flavour.</p>
+        <button class="add-to-cart" data-name="Creamy Pasta" data-price="179">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+<!-- French Fries -->
+<article class="food-card"data-category="meals">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=85"
+            alt="Golden french fries"
+            class="food-image">
+        <span class="food-tag">CRISPY FAVOURITE</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>French Fries</h3>
+            <span class="food-price">₹79</span>
+        </div>
+        <p>Golden, crispy fries for your snack cravings.</p>
+        <button class="add-to-cart" data-name="French Fries" data-price="79">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+<!-- Cheese Sandwich -->
+<article class="food-card" data-category="meals">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=85"
+            alt="Fresh cheese sandwich"
+            class="food-image">
+        <span class="food-tag">FRESH PICK</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>Cheese Sandwich</h3>
+            <span class="food-price">₹109</span>
+        </div>
+        <p>A fresh, satisfying sandwich with cheesy goodness.</p>
+        <button class="add-to-cart" data-name="Cheese Sandwich" data-price="109">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+<!-- Chocolate Brownie -->
+<article class="food-card"data-category="desserts">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=85"
+            alt="Chocolate brownie"
+            class="food-image">
+        <span class="food-tag">SWEET MOMENT</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>Chocolate Brownie</h3>
+            <span class="food-price">₹89</span>
+        </div>
+        <p>A rich chocolate treat for a little indulgence.</p>
+        <button class="add-to-cart" data-name="Chocolate Brownie" data-price="89">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+<!-- Chocolate Shake -->
+<article class="food-card"data-category="drinks">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&auto=format&fit=crop&q=85"
+            alt="Chocolate milkshake"
+            class="food-image">
+        <span class="food-tag">COOL & CREAMY</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>Chocolate Shake</h3>
+            <span class="food-price">₹119</span>
+        </div>
+        <p>A chilled chocolate shake to brighten your day.</p>
+        <button class="add-to-cart" data-name="Chocolate Shake" data-price="119">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+<!-- Strawberry Cheesecake -->
+<article class="food-card"data-category="desserts">
+    <div class="food-image-wrap">
+        <img
+            src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop&q=85"
+            alt="Strawberry cheesecake"
+            class="food-image">
+        <span class="food-tag">DESSERT SPECIAL</span>
+    </div>
+    <div class="food-details">
+        <div class="food-title-row">
+            <h3>Strawberry Cheesecake</h3>
+            <span class="food-price">₹149</span>
+        </div>
+        <p>Creamy cheesecake with a fruity finish.</p>
+        <button class="add-to-cart" data-name="Strawberry Cheesecake" data-price="149">
+            Add to Cart <span>+</span>
+        </button>
+    </div>
+</article>
+
+                        
+
+                <!-- Burger -->
+                <article class="food-card" data-category="meals">
+                    <div class="food-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=85"
+                            alt="Fresh burger with lettuce and tomato"
+                            class="food-image"
+                        >
+                        <span class="food-tag">MUST TRY</span>
+                    </div>
+
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Classic Burger</h3>
+                            <span class="food-price">₹129</span>
+                        </div>
+
+                        <p>A satisfying bite with fresh
+                           layers and flavour.</p>
+
+                        <button class="add-to-cart"
+                                data-name="Classic Burger"
+                                data-price="129">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Cake -->
+                <article class="food-card"data-category="desserts">
+                    <div class="food-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=85"
+                            alt="Rich chocolate celebration cake"
+                            class="food-image"
+                        >
+                        <span class="food-tag">SWEET TREAT</span>
+                    </div>
+
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Chocolate Cake</h3>
+                            <span class="food-price">₹99</span>
+                        </div>
+
+                        <p>Rich chocolate goodness
+                           for your sweetest moments.</p>
+
+                        <button class="add-to-cart"
+                                data-name="Chocolate Cake"
+                                data-price="99">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="menu-note">
+                MORE DELICIOUS THINGS ARE COMING SOON.
+            </p>
+
+        </section>
+
+        <!-- Our Story -->
+        <section class="story-section" id="about">
+            <p class="eyebrow">A LITTLE ABOUT US</p>
+
+            <h2>Good food brings us closer.<br>
+                <em>That is our kind of bliss.</em>
+            </h2>
+
+            <p>
+                At Bliss Bites, we believe the simplest food moments
+                can become the most memorable ones. Discover your
+                favourites and make every bite count.
+            </p>
+
+            <a href="#menu" class="primary-button">
+                Find Your Favourite <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <a href="#home" class="logo">bliss<span>.</span>bites</a>
+
+        <p>Good food. Good mood. Always.</p>
+
+        <a href="#home" class="back-top">BACK TO TOP ↑</a>
+
+        <div class="footer-bottom">
+            <span>© 2026 Bliss Bites</span>
+            <span>MADE WITH ♡</span>
+        </div>
+    </footer>
+
+<!-- Shopping Cart -->
+<div id="cart-panel" class="cart-panel" hidden>
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        Your cart is empty.
+    </div>
+
+    <div class="cart-price-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₹0</span>
+    </div>
+
+    <div class="cart-price-row">
+        <span>Delivery Fee</span>
+        <span id="cart-delivery">₹0</span>
+    </div>
+
+    <div class="cart-total">
+        <span>Grand Total</span>
+        <span id="cart-total">₹0</span>
+    </div>
+
+    <button id="close-cart" class="close-cart">
+        Continue Shopping
+    </button>
+    
+<button id="checkout-btn" class="checkout-btn">
+    Proceed to Checkout →
+</button>
+
+</div>
+
+
+<!-- CHECKOUT SECTION -->
+<section id="checkout-section" class="checkout-section" hidden>
+
+    <div class="checkout-heading">
+        <p class="eyebrow">BLISS BITES · CHECKOUT</p>
+        <h2>Checkout</h2>
+        <p>Almost there! Enter your details to complete your order.</p>
+    </div>
+
+    <form id="checkout-form">
+
+        <label for="customer-name">Full Name</label>
+        <input
+            type="text"
+            id="customer-name"
+            name="customer-name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label for="customer-phone">Phone Number</label>
+        <input
+            type="tel"
+            id="customer-phone"
+            name="customer-phone"
+            placeholder="Enter your phone number"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+        >
+
+        <label for="customer-address">Delivery Address</label>
+        <textarea
+            id="customer-address"
+            name="customer-address"
+            placeholder="Enter your delivery address"
+            rows="3"
+            required
+        ></textarea>
+
+        <button type="submit" class="checkout-btn">
+            Place Order
+        </button>
+
+        <button type="button" id="back-to-cart" class="close-cart">
+            Back to Cart
+        </button>
+
+    </form>
+
+    <div id="order-success" class="order-success" hidden>
+        <h3>Thank You! Your Order Is Confirmed.</h3>
+        <p id="order-message"></p>
+
+        <button type="button" id="continue-shopping" class="checkout-btn">
+            Continue Shopping
+        </button>
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
